@@ -1,0 +1,302 @@
+body {
+    background-color: #f5f5f5;
+}
+.top_Bar{
+    position: static;
+}
+.safeTip {
+	width: 100%;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    font-family: sans-sarif;
+    font-size:13px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.safeTip p {
+    position: relative;
+    width: 240px;
+    margin:0 auto;
+    padding-left: 15px;   
+}
+.safeTip p::before {
+	content: '';
+    background: url('../images/safe_icon.png');  
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+/* 店铺 */
+.jd_cont {
+    margin-bottom: 60px;
+}
+.jd_shop {
+	margin-top: 10px;
+}
+
+/* 公共复选框 */
+.checkbox {
+	background: url('../images/shop-icon.png') no-repeat;
+	background-size: 50px 100px;
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+    z-index: 1000;
+}
+/* 被选中的复选框 */ 
+.checkbox[checked]{
+    background-position: -25px 0;
+}
+
+/* 店铺名字 */
+.jd_shop .shop_title {
+	width: 100%;
+	height: 36px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 34px;
+	padding: 0 5px;
+}
+.jd_shop .shop_title .title_checkbox {
+	margin-top: 8px;
+}
+.jd_shop .shop_title .titlt_name {
+	margin-left: 5px;
+    position: relative;
+    padding-left: 25px;
+}
+.jd_shop .shop_title .titlt_name::before {
+    content: '';
+    display: block;
+    width:18px;
+    height: 18px;
+	background: url('../images/buy-logo.png') no-repeat;
+	background-size: 18px 18px;
+    position: absolute;
+    top:9px;
+    left: 5px;
+}
+.jd_shop .shop_title .title_fare {
+    color:#d8505c;
+}
+/* 店铺商品 */
+.shop_product {
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+    position: relative;
+    padding: 0 5px;
+}
+.shop_product .product_checbox {
+  position: absolute;
+  top:30px;
+}
+.shop_product .product_img {
+    position: absolute;
+    top:14px;
+    left: 35px;
+}
+.shop_product .product_img a {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+.shop_product .product_img a img {
+    width: 80px;
+    height:80px;
+}
+.shop_product .product_name {
+	width: 100%;
+    height: 110px;
+    padding-left: 125px;
+    padding-top: 10px;
+    position: relative;
+}
+.shop_product .product_name  a {
+    display: block;
+    font-size: 13px;
+    overflow: hidden;
+    height: 40px;
+}
+.shop_product .product_name p {
+    font-size: 13px;
+    position: absolute;
+    left: 125px;
+    bottom: 45px; 
+}
+.shop_product .product_name .product_num {
+    position: absolute;
+    left: 125px;
+    bottom: 16px; 
+}
+.shop_product .product_name .product_num span{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 25px;
+    border:1px solid #e0e0e0;
+    margin-left: -1px;
+    text-align: center;
+    line-height: 23px;
+}
+.shop_product .product_name .product_del {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.shop_product .product_name .product_del .product_del_top {
+    width: 20px;
+    height: 5px;
+}
+.shop_product .product_name .product_del .product_del_top img {
+    display: block;
+    width:20px;
+    height: 5px;
+    margin-left: -1px;
+}
+.shop_product .product_name .product_del .product_del_bot {
+    width: 18px;
+    height: 18px;
+}
+.shop_product .product_name .product_del .product_del_bot img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+}
+/* 底部结算栏 */
+.account {
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    
+}
+.account .option_check {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 65px;
+    height: 75px;
+}
+.account .option_check .account_checkbox {
+    position: absolute;
+    left: 5px;
+    top:20px;
+}
+.account .option_check p {
+    line-height: 57px;
+    padding-left:30px;
+}
+.account .account_info {
+    width: 100%;
+    padding-left: 70px;
+} 
+.account .account_info p {
+    line-height: 25px;
+}
+.account .account_info p:first-child {
+    font-size:15px;
+    margin-top: 5px;
+}
+.account .account_info p:last-of-type {
+    font-size: 10px;
+}
+.account .account_info div {
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 20px;
+    background: #f15353;
+    width: 116px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+}
+/* 确认删除商品 */
+.jd_info {
+   position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1001;
+    display: none;
+    
+}
+.jd_info .jd_info_box {
+  width: 80%;
+  margin:0 auto;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding:10px 0;
+  margin-top: 40%;
+}
+.jd_info .jd_info_box .jd_info_box_con {
+    font-size:18px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.jd_info .jd_info_box .jd_info_box_btn {
+    font-size: 16px;
+}
+.jd_info .jd_info_box .jd_info_box_btn .cancel,
+.jd_info .jd_info_box .jd_info_box_btn .submit {
+    display: inline-block;
+    width: 30%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 28px;
+}
+.jd_info .jd_info_box .jd_info_box_btn .submit {
+    background-color: #f15353;
+    border: none;
+    line-height: 30px;
+}
+/* 删除动画 */
+@-webkit-keyframes delBox{
+    0% {
+        opacity: 0;
+        transform:translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 1;
+        transform:translateY(30px);
+        -webkit-transform: translateY(30px);
+    }
+    75% {
+        transform:translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    90% {
+        transform:translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+    100% {
+        opacity: 1
+        transform:none;
+        -webkit-transform: none;
+    }
+    
+} 
+.anidelBox {
+        animation: delBox 2s ease;
+    }
